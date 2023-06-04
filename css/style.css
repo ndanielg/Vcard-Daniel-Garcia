@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --back-oscuro: #2A2A2A;
+    --back-claro: #cccccc;
+    --txt-oscuro: #555555;
+    --txt-claro: #e2e2e2;
+    --blanco: #ffffff;
+}
+html{scroll-behavior: smooth;}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: var(--back-claro);
+    transition: all .5s ease;
+}
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+body::-webkit-scrollbar:vertical {
+    width: 7px;
+}
+body::-webkit-scrollbar-button:increment, .contenedor::-webkit-scrollbar-button {
+    display: none;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--back-oscuro);
+    border-radius: 20px;
+}
+nav{
+    margin: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-ele{
+    margin: 0 10px;
+}
+.nav-ele img{
+    max-width: 35px;
+}
+.btn{
+    cursor: pointer;
+}
+main{
+    padding: 20px;
+}
+.perfil{
+    margin: 0 auto;
+    padding: 1rem;
+    width: 90%;
+    background: var(--back-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    box-shadow:
+    12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+    -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+}
+.avatar{
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+    background-color: #00DBDE;
+    background-image: linear-gradient(315deg, #00DBDE 40%, #FC00FF 100%);
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+    12px 12px 16px 0 rgba(255, 255, 255, 0.4) inset,
+    -8px -8px 12px 0 rgba(0, 0, 0, .35) inset,
+    1px 1px 15px #4B97FA;
+}
+.avatar img{
+    max-width: 140px;
+}
+.perfil .datos{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.25rem;
+}
+.perfil .datos p{
+    font-weight: 300;
+}
+hr{
+    height: 2px;
+    background-image: linear-gradient(315deg, #00DBDE 40%, #FC00FF 100%);
+    border: none;
+    margin: 5px 0;
+}
+.perfil .datos strong{
+    font-weight: 500;
+}
+.job{
+    color: var(--txt-oscuro);
+    font-style: italic;
+}
+.perfil .services{
+    margin: 20px 0;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow:
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+.perfil .services strong{
+    font-size: 1.15rem;
+}
+.serv-datos{
+    margin: 0 auto;
+    width: 80%;
+    color: var(--txt-oscuro);
+}
+.servicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dot{
+    width: 5px;
+    height: 5px;
+    background: var(--back-oscuro);
+    border-radius: 50%;
+    margin: 0 8px 0;
+}
+.perfil .data-contact{
+    margin: 20px 0;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow:
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+.perfil .data-contact strong{
+    font-size: 1.15rem;
+}
+.dato{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--txt-oscuro);
+    word-break: break-all;
+    margin: 10px 0;
+}
+.icono{
+    margin: 0 10px 0 0;
+    max-width: 25px;
+}
+.perfil .redes{
+    margin: 20px 0;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow:
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+.perfil .redes strong{
+    font-size: 1.15rem;
+}
+.redes-datos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.redes-datos .dato a img{
+    max-width: 30px;
+}
+/*Modo noche*/
+.oscuro{
+    background: var(--back-oscuro);
+    color: var(--blanco);
+}
+.perfil-oscuro{
+    background: var(--back-oscuro);
+}
+.icono-oscuro{
+    filter: invert(1);
+}
+.lista-oscura{
+    color: var(--txt-claro);
+}
+.info-oscura{
+    color: var(--txt-claro);
+}
+.job-oscuro{
+    color: var(--txt-claro);
+}
+.dot-oscuro{
+    background: var(--back-claro);
+}
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 480px){
+    main{
+        padding: 10px;
+    }
+    .perfil{
+        width: 100%;
+    }
+    .perfil .services,
+    .perfil .data-contact,
+    .perfil .redes{
+        width: 100%;
+    }
+}

@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Ing. Daniel García
+N:García;Ing. Daniel ;;;
+EMAIL;TYPE=INTERNET;TYPE=WORK:ndanielg27@gmail.com
+item1.TEL:55 6689 6435
+item1.X-ABLabel:
+item2.TITLE:Asesor Digital
+item2.X-ABLabel:
+PHOTO:https://lh3.googleusercontent.com/contacts/AOq4LdbaH9w88RQZGDY82oKmvl
+ 0k4G_DilS1b34Ofh8zMF7tquQ6jn9w
+CATEGORIES:myContacts
+END:VCARD
