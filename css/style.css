@@ -227,4 +227,7 @@ hr{
     .perfil .redes{
         width: 100%;
     }
+    .icono{
+      margin: 0;
+    }
 }
