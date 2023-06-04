@@ -32,9 +32,9 @@
 <body>
     <nav>
     	<div class="nav-ele">
-    		<a href="">
-    			<img src="assets/img/compartir.png" class="icono">
-    		</a>
+        <div class="" onclick="return nativeShare();">
+          <img src="assets/img/compartir.png" class="icono">
+        </div>
     	</div>
     	<div class="nav-ele">
     		<div class="btn" onclick="cambiarModo()">
@@ -124,5 +124,17 @@
     	</section>
     </main>
     <script type="text/javascript" src="js/app.js"></script>
+    <script>
+       var nativeShare = function() {
+          if (navigator.share) {
+             navigator.share({
+                title: "Tarjeta virtual Danil García",
+                text: "texto",
+                url: "URL",
+             })
+          }
+          return false;
+       }
+       </script>
 </body>
 </html>
