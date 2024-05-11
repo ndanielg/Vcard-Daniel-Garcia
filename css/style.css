@@ -38,8 +38,15 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+i{
+  font-size: 1.5em;
+}
 .nav-ele{
     margin: 0 10px;
+}
+.nav-ele a{
+  text-decoration: none;
+  color: inherit;
 }
 .nav-ele img{
     max-width: 35px;
@@ -124,17 +131,28 @@ hr{
     width: 80%;
     color: var(--txt-oscuro);
 }
+.serv-datos a{
+  color: inherit;
+}
 .servicio{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  margin: 5px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.servicio:hover .dot{
+    width: 7px;
+    height: 7px;
+    background-image: linear-gradient(315deg, #00DBDE 40%, #FC00FF 100%);
+    margin: 0 5px 0;
 }
 .dot{
     width: 5px;
     height: 5px;
     background: var(--back-oscuro);
     border-radius: 50%;
-    margin: 0 8px 0;
+    margin: 0 10px 0;
+    transition: all .3s ease;
 }
 .perfil .data-contact{
     margin: 20px 0;
@@ -156,6 +174,12 @@ hr{
     align-items: center;
     flex-wrap: wrap;
 }
+.dato a{
+  color: inherit;
+}
+.dato i{
+  margin: 0 10px;
+}
 .info{
     display: flex;
     justify-content: center;
@@ -164,10 +188,6 @@ hr{
     color: var(--txt-oscuro);
     word-break: break-all;
     margin: 10px 0;
-}
-.icono{
-    margin: 0 10px 0 0;
-    max-width: 25px;
 }
 .perfil .redes{
     margin: 20px 0;
