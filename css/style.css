@@ -188,6 +188,11 @@ hr{
     color: var(--txt-oscuro);
     word-break: break-all;
     margin: 10px 0;
+    transition: all .5s ease;
+}
+.info:hover{
+  transform: scale(.95);
+  color: #555;
 }
 .perfil .redes{
     margin: 20px 0;
@@ -210,6 +215,13 @@ hr{
 }
 .redes-datos .dato a img{
     max-width: 30px;
+}
+.redes-datos .dato a{
+  transition: all .5s ease;
+}
+.redes-datos .dato:hover a{
+  transform: scale(.95);
+  color: #555;
 }
 /*Modo noche*/
 .oscuro{
