@@ -368,3 +368,44 @@ footer{
       padding: 5px;
     }
 }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape){
+  .trabajo{
+    width: 90%;
+  }
+  header{
+    padding: 0;
+  }
+  h2{
+    font-size: 1.35em;
+  }
+  header .logo{
+    margin-bottom: 10px;
+  }
+  header form{
+    margin-bottom: 10px;
+  }
+  header .barra-busqueda{
+    width: 80%;
+    height: 30px;
+  }
+  header .categorias a{
+    margin: 5px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  .overlay img{
+    max-width: 50%;
+  }
+  .contenedor-img{
+    text-align: center;
+  }
+  .overlay #btn-cerrar-popup{
+    right: 0;
+    top: 0;
+  }
+  .overlay .descripcion{
+    padding: 5px;
+    max-width: 80%;
+  }
+}
